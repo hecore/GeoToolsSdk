@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  	<display-name>TestDb</display-name>
+  	<welcome-file-list>
+    	<welcome-file>index.html</welcome-file>
+  	</welcome-file-list>
+  	
+  	
+  	<servlet>
+	   	<servlet-name>StartupConfig</servlet-name>
+	   	<servlet-class>com.bgy.servlet.StartupConfig</servlet-class>
+	   	<load-on-startup>1</load-on-startup>
+	</servlet>	
+	<servlet-mapping>
+	    <servlet-name>StartupConfig</servlet-name>
+	    <url-pattern>/StartupConfig</url-pattern>
+	</servlet-mapping>  			
+	
+	<servlet>
+	   	<servlet-name>TestSDEConn</servlet-name>
+	   	<servlet-class>com.bgy.servlet.TestSDEConn</servlet-class>
+	</servlet>	
+	<servlet-mapping>
+	    <servlet-name>TestSDEConn</servlet-name>
+	    <url-pattern>/TestSDEConn</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	   	<servlet-name>SdeToShapeFile</servlet-name>
+	   	<servlet-class>com.bgy.servlet.SdeToShapeFile</servlet-class>
+	</servlet>	
+	<servlet-mapping>
+	    <servlet-name>SdeToShapeFile</servlet-name>
+	    <url-pattern>/SdeToShapeFile</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	   	<servlet-name>ShapeToSDE</servlet-name>
+	   	<servlet-class>com.bgy.servlet.ShapeToSDE</servlet-class>
+	</servlet>	
+	<servlet-mapping>
+	    <servlet-name>ShapeToSDE</servlet-name>
+	    <url-pattern>/ShapeToSDE</url-pattern>
+	</servlet-mapping>	
+	
+	<servlet>
+	   	<servlet-name>ShapeFileToJson</servlet-name>
+	   	<servlet-class>com.bgy.servlet.ShapeFileToJson</servlet-class>
+	</servlet>	
+	<servlet-mapping>
+	    <servlet-name>ShapeFileToJson</servlet-name>
+	    <url-pattern>/ShapeFileToJson</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	   	<servlet-name>ShapeFileToDbf</servlet-name>
+	   	<servlet-class>com.bgy.servlet.ShapeFileToDbf</servlet-class>
+	</servlet>	
+	<servlet-mapping>
+	    <servlet-name>ShapeFileToDbf</servlet-name>
+	    <url-pattern>/ShapeFileToDbf</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	   	<servlet-name>ShapeFileRecordCount</servlet-name>
+	   	<servlet-class>com.bgy.servlet.ShapeFileRecordCount</servlet-class>
+	</servlet>	
+	<servlet-mapping>
+	    <servlet-name>ShapeFileRecordCount</servlet-name>
+	    <url-pattern>/ShapeFileRecordCount</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	   	<servlet-name>SdeAllTableInfo</servlet-name>
+	   	<servlet-class>com.bgy.servlet.SdeAllTableInfo</servlet-class>
+	</servlet>	
+	<servlet-mapping>
+	    <servlet-name>SdeAllTableInfo</servlet-name>
+	    <url-pattern>/SdeAllTableInfo</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	   	<servlet-name>DeleteSdeTable</servlet-name>
+	   	<servlet-class>com.bgy.servlet.DeleteSdeTable</servlet-class>
+	</servlet>	
+	<servlet-mapping>
+	    <servlet-name>DeleteSdeTable</servlet-name>
+	    <url-pattern>/DeleteSdeTable</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	   	<servlet-name>EditShapeField</servlet-name>
+	   	<servlet-class>com.bgy.servlet.EditShapeField</servlet-class>
+	</servlet>	
+	<servlet-mapping>
+	    <servlet-name>EditShapeField</servlet-name>
+	    <url-pattern>/EditShapeField</url-pattern>
+	</servlet-mapping>		
+	
+	<servlet>
+	   	<servlet-name>MdbShapeToSDE</servlet-name>
+	   	<servlet-class>com.bgy.servlet.MdbShapeToSDE</servlet-class>
+	</servlet>	
+	<servlet-mapping>
+	    <servlet-name>MdbShapeToSDE</servlet-name>
+	    <url-pattern>/MdbShapeToSDE</url-pattern>
+	</servlet-mapping>		
+	
+	<servlet>
+	   	<servlet-name>MulShpToJson</servlet-name>
+	   	<servlet-class>com.bgy.servlet.MulShpToJson</servlet-class>
+	</servlet>	
+	<servlet-mapping>
+	    <servlet-name>MulShpToJson</servlet-name>
+	    <url-pattern>/MulShpToJson</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	   	<servlet-name>ParseDxf</servlet-name>
+	   	<servlet-class>com.bgy.servlet.ParseDxf</servlet-class>
+	</servlet>	
+	<servlet-mapping>
+	    <servlet-name>ParseDxf</servlet-name>
+	    <url-pattern>/ParseDxf</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	   	<servlet-name>QuerySdeBbox</servlet-name>
+	   	<servlet-class>com.bgy.servlet.QuerySdeBbox</servlet-class>
+	</servlet>	
+	<servlet-mapping>
+	    <servlet-name>QuerySdeBbox</servlet-name>
+	    <url-pattern>/QuerySdeBbox</url-pattern>
+	</servlet-mapping>		
+	
+</web-app>
